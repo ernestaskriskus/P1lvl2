@@ -1,17 +1,12 @@
 public class StudentDto {
-    private final String name;
-    private final String surName;
+    private final String fullname;
 
-    public StudentDto(String name, String surName) {
-        this.name = name;
-        this.surName = surName;
+    public StudentDto(String fullnamename) {
+        this.fullname = fullnamename;
     }
 
-    public String getName() {
-        return name;
+    public String getFullname() {
+        return fullname;
     }
 
-    public String getSurName() {
-        return surName;
-    }
 }
