@@ -1,21 +1,24 @@
 public class P1GitApp {
     public static void main(String[] args) {
         System.out.println("Hello Git!");
-        private static void ifExample(){
-           final int dayAsValue = 2;
-            if (dayAsValue >= 1 && dayAsValue <= 5){
-                doWork()
-            } else {
-                doToRest();
-            }
+        ifExample();
+    }
+
+    private static void ifExample(){
+        int dayValue = 6;
+        if (dayValue >= 1 && dayValue <= 5){
+            doWork();
+        } else if (dayValue >= 6 && dayValue <= 7) {
+            doToRest();
+        } else {
+            System.err.println("day value is wrong!");
         }
     }
-private static void doWork(){
-    System.out.println("I am working!");
-}
-private static void doToRest(){
-    System.out.println("I am resting!");
-}
-
+    private static void doWork(){
+        System.out.println("I am working");
+    }
+    private static void doToRest(){
+        System.out.println("Resting");
+    }
 
 }
